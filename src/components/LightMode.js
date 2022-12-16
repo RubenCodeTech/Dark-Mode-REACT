@@ -1,5 +1,4 @@
 import '../App.css'
-// import { useState } from "react";
 
 function LightMode({ body }) {
     return (
@@ -15,9 +14,10 @@ function LightMode({ body }) {
         </button>
     )
     function light() {
-        if (body.className === 'darkMode' || body.className=== '') {
+        if (body.className === 'darkMode' || body.className === 'pinkMode' || body.className=== '') {
             body.classList.add('lightMode');
             body.classList.remove('darkMode');
+            body.classList.remove('pinkMode')
         }
     }
 }
